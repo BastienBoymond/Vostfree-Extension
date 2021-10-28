@@ -1,0 +1,19 @@
+{
+  "name": "vostfree-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BastienBoymond/Vostfree-Extension.git"
+  },
+  "author": "BastienBoymond",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BastienBoymond/Vostfree-Extension/issues"
+  },
+  "homepage": "https://github.com/BastienBoymond/Vostfree-Extension#readme"
+}
