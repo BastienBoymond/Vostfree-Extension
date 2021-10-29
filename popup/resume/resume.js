@@ -11,30 +11,25 @@ async function requestGetData(url){
     }
 };
 
-function getCookies(domain, name) {
+function get_stored_value(key) {
     return new Promise((resolve) => {
-        chrome.cookies.get({"url": domain, "name": name}, function(cookie) {
-            resolve(cookie);
+        chrome.storage.sync.get(key, function(value) {
+            resolve(value[key]);
         });
     });
 }
 
 async function createResumeButton() {
-    let data = await getCookies("https://vostfree.tv/", "anime_series");
-    data = decodeURIComponent(data.value);
-    let animes = data.split("||");
-    animes.shift();
+    let animes = await get_stored_value("anime_series");
     if (animes.length > 0) {
-        for (const anime of animes) { // 0: anime 1: episode
+        for (const anime of animes) {
             console.log(anime);
-            let ep = anime.split("|");
-            console.log(ep);
-            let details = await requestGetData('http://54.36.183.102:2900/anime/' + ep[0]);
+            let details = await requestGetData('http://54.36.183.102:2900/anime/' + anime.anime);
             details = JSON.parse(details);
             const button = document.createElement('button');
-            button.innerText = details.title + " Ep" + ep[1] + "\nEpisodes:" + details.nbepisodes;
+            button.innerText = details.title + " Ep" + anime.episodes + "\nEpisodes:" + details.nbepisodes;
             button.className = details.title;
-            button.id = ep[0];
+            button.id = anime.anime;
             document.getElementsByClassName('resume-content')[0].appendChild(button);
         }
     }

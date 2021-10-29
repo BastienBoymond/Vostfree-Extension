@@ -30,6 +30,10 @@ button {
     background-color: #2196F3;
 }
 
+.purple {
+    background-color: #9C27B0;
+}
+
 .grey {
     background-color: #9E9E9E;
 }
@@ -48,7 +52,16 @@ button:hover {
     height: 80%;
 }
 
+.custom-scroll {
+    overflow-y: auto;
+    height: 65%;
+}
+
 .goBack {
     border-radius: 50px;
     width: 12%;
+}
+
+.cookies-content {
+    font-size: 14px;
 }

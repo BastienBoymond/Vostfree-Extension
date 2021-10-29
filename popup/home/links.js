@@ -4,5 +4,7 @@ window.onclick = function(event) {
         window.open('https://github.com/BastienBoymond/Vostfree-Extension');
     } else if (target.matches('.resume-buttons')) {
         window.location.href = '../resume/resume.html'
+    } else if (target.matches('.cookies-update')) {
+        window.location.href = '../cookies/cookies.html'
     }
 }
