@@ -19,7 +19,7 @@ function get_stored_value(key) {
     });
 }
 
-async function createResumeButton() {
+async function createNewsButton() {
     let animes = await get_stored_value("anime_series");
     if (animes.length > 0) {
         for (const anime of animes) {
@@ -37,7 +37,7 @@ async function createResumeButton() {
     }
 }
 
-createResumeButton();
+createNewsButton();
 
 window.onclick = async function(event) {
     const target = event.target;
