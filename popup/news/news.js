@@ -23,18 +23,16 @@ async function createResumeButton() {
     let animes = await get_stored_value("anime_series");
     if (animes.length > 0) {
         for (const anime of animes) {
-            console.log(anime);
             let details = await requestGetData('http://54.36.183.102:2900/anime/' + anime.anime);
             details = JSON.parse(details);
-            const button = document.createElement('button');
-            button.innerText = details.title + " Ep" + anime.episodes + "\nEpisodes:" + details.nbepisodes;
-            button.className = details.title;
-            button.id = anime.anime;
-            if (anime.episodes == details.nbepisodes) {
-                button.style.backgroundColor = "Green";
-                button.innerText += "\nCompleted";
+            console.log(details);
+            if (anime.episodes < details.nbepisodes) {
+                const button = document.createElement('button');
+                button.innerText = details.title + " Ep" + anime.episodes + "\nEpisodes:" + details.nbepisodes;
+                button.className = details.title;
+                button.id = anime.anime;
+                document.getElementsByClassName('news-content')[0].appendChild(button);
             }
-            document.getElementsByClassName('resume-content')[0].appendChild(button);
         }
     }
 }

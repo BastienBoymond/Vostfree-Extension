@@ -8,5 +8,7 @@ window.onclick = function(event) {
         window.location.href = '../cookies/cookies.html'
     } else if (target.matches('.delete-buttons')) {
         window.location.href = '../delete/delete.html'
+    } else if (target.matches('.news-buttons')) {
+        window.location.href = '../news/news.html'
     }
 }
