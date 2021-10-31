@@ -94,7 +94,7 @@ async function check_news() {
 function createAlarm() {
     chrome.alarms.create("newsAlarm", {
         when: Date.now(),
-        periodInMinutes: 1,
+        periodInMinutes: 1440,
     });
 }
 
