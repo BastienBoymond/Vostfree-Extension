@@ -75,7 +75,7 @@ async function check_news() {
     let newsPage = [];
 
     let animes = await get_stored_value("anime_series");
-    if (animes.length > 0) {
+    if (animes) {
         for (const anime of animes) {
             let details = await requestGetData('http://54.36.183.102:2900/anime/' + anime.anime);
             details = JSON.parse(details);
@@ -94,7 +94,7 @@ async function check_news() {
 function createAlarm() {
     chrome.alarms.create("newsAlarm", {
         when: Date.now(),
-        periodInMinutes: 1440,
+        periodInMinutes: 1,
     });
 }
 

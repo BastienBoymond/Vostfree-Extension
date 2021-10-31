@@ -10,7 +10,8 @@
         "alarms"
     ],
     "host_permissions": [
-        "http://54.36.183.102:*/*",
+        "http://54.36.183.102:2900/*",
+        "http://54.36.183.102:3900/*",
         "https://www.japscan.ws/*",
         "https://vostfree.tv/"
     ],
