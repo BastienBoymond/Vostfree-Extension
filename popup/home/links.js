@@ -6,5 +6,7 @@ window.onclick = function(event) {
         window.location.href = '../resume/resume.html'
     } else if (target.matches('.cookies-update')) {
         window.location.href = '../cookies/cookies.html'
+    } else if (target.matches('.delete-buttons')) {
+        window.location.href = '../delete/delete.html'
     }
 }
