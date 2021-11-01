@@ -45,7 +45,7 @@ window.onclick = async function(event) {
     const target = event.target;
     if (target.className === "goBack" || target.className === "fas fa-arrow-left") {
         window.location.href = '../home/popup.html'
-    } else if (target.className !== 'scroll-bar resume-content') {
+    } else if (target.className !== 'scroll-bar resume-content' && target.id) {
         const id = target.id;
         window.open(`https://vostfree.tv/${id}-ddl-streaming-1fichier-uptobox.html`);
     }
