@@ -2,8 +2,8 @@
     <h1>Vostfree-Extension</h1>
 
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/gealnbcnbbnbhkkokmchmacmblogonak?label=Stars&color=brightgreen&logo=googlechrome&style=for-the-badge)](https://chrome.google.com/webstore/detail/vostfree-extension/gealnbcnbbnbhkkokmchmacmblogonak?hl=fr&authuser=0)
-[![Chrome Web Store](https://img.shields.io/chrome-web-store/users/ogealnbcnbbnbhkkokmchmacmblogonak?color=brightgreen&logo=googlechrome&style=for-the-badge)](https://chrome.google.com/webstore/detail/vostfree-extension/gealnbcnbbnbhkkokmchmacmblogonak?hl=fr&authuser=0)
-[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/oennheijilebmieelbahckofblcgkljn?color=brightgreen&logo=googlechrome&style=for-the-badge&label=Version)](https://chrome.google.com/webstore/detail/vostfree-extension/gealnbcnbbnbhkkokmchmacmblogonak?hl=fr&authuser=0)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/users/gealnbcnbbnbhkkokmchmacmblogonak?color=brightgreen&logo=googlechrome&style=for-the-badge)](https://chrome.google.com/webstore/detail/vostfree-extension/gealnbcnbbnbhkkokmchmacmblogonak?hl=fr&authuser=0)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/gealnbcnbbnbhkkokmchmacmblogonak?color=brightgreen&logo=googlechrome&style=for-the-badge&label=Version)](https://chrome.google.com/webstore/detail/vostfree-extension/gealnbcnbbnbhkkokmchmacmblogonak?hl=fr&authuser=0)
 <br>
 </div>
 
